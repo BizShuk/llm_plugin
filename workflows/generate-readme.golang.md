@@ -1,9 +1,9 @@
 ---
-name: Generate Software Project README
+name: Generate README - Golang
 description: Analyze workspace and generate comprehensive README documentation with handlers, folder structure, external services, and run instructions
 ---
 
-# Generate Software Project README Workflow
+# Generate README - Golang Workflow
 
 This workflow analyzes the current software project and generates comprehensive documentation in README.md.
 
