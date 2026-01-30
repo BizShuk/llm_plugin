@@ -1,7 +1,12 @@
+---
+name: Profile Consistency
+trigger: always_on
+description: Check all profile is consistent with each other
+---
 
-# Profile
+# Profile Consistency
 
-### 角色一致性
+## 角色一致性
 
 所有面向互相支持，形成一個立體、真實、可信的虛擬角色。
 

@@ -1,1 +1,7 @@
-{}
+{
+    "mcp": {
+        "excluded": []
+    },
+    "mcpServers": {},
+    "hooks": {}
+}
