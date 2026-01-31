@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# Default Antigravity Gemini Link
 mkdir -p ~/.gemini/antigravity
 mkdir -p ~/.gemini/rules
 mkdir -p ~/.gemini/skills
@@ -9,4 +9,18 @@ mkdir -p ~/.gemini/workflows
 ln -s ~/.gemini/skills ~/.gemini/antigravity/global_skills
 ln -s ~/.gemini/workflows ~/.gemini/antigravity/global_workflows
 
-ln -s $(pwd)/rules/GEMINI.global.md ~/.gemini/GEMINI.md
+# Global Config Alias
+ln -s ~/.gemini ./config/
+ln -s ~/.agent  ./config/
+ln -s ~/.claude ./config/
+
+
+
+
+# Global Rules
+ln -s ~/projects/llm_plugin/rules/GEMINI.global.md ./config/.gemini/GEMINI.md
+
+# Projects Social Platform
+ln -s ~/projects/llm_plugin/rules/go-* ./projects/social_platform/rules/
+
+# Project Alias

@@ -5,26 +5,83 @@ description: Create a social media post based on a given high concept.
 
 # ScreenWriter
 
-1. 故事開發 (Story Developer)
+Create engaging social media content from a high concept through story development, creative planning, and media generation.
 
-From given high concept, start to develop a comprehensive story.
-Main mission is to enrich the story and make it more attractive to the target audience.
-Orchestrate the flow to make the capture the emotion and eye ball
+## Resources
 
-Start with conceptualizing by attaching the concept with a motivational quotes or inspirational stories.
-Define the charactor archiving, setup a main goal, weakness, and growth line.
-List out the story outline with 3 parts, setup, controntation, resolution.
+- **Archetype folder**: `<workspace>/archetype/*` - Use as prototype models for character images or outfits
+- **Background folder**: `<workspace>/background/*` - All character profile files
 
-2. 創意企劃 (Creative Planner)
+---
 
-You know quite well about the audience mindset.
-From developed story, you convert the story to a micro movie script/branch story/integraction scenario
-Should tell the story with any type of emotions (angry, love, like, sad, touching), not a straightforward story
+## 1. 故事開發 (Story Developer)
 
-You also reflect whether can add some twist to make the story more interesting
+From a given high concept, develop a comprehensive story that captures emotion and attention.
 
-3. Image Generator
+### Process
 
-Based on the previous output, generate a social media post image and attach with post text
+1. **Conceptualize** - Anchor the concept with motivational quotes or inspirational stories
+2. **Character Archiving** - For each main character, define:
+   - Main goal
+   - Weakness
+   - Growth line/arc
+3. **Story Outline** - Three-part structure:
+   - **Setup**: Introduce characters and situation
+   - **Confrontation**: Present conflict and challenges
+   - **Resolution**: Conclude with transformation
 
-4. store all information include test/image/video with name "YYYYMMDD-<story>" under post/ folder
+---
+
+## 2. 創意企劃 (Creative Planner)
+
+Convert the story into an emotionally engaging social media format.
+
+### Process
+
+1. Understand the audience mindset
+2. Convert story to:
+   - Micro movie script
+   - Branch story
+   - Interaction scenario
+3. Evoke emotions: angry 😤, love ❤️, like 😊, sad 😢, touching 🥹
+4. Consider adding a **twist** to make it more interesting
+
+---
+
+## 3. Image Generator
+
+Generate social media post images based on the script.
+
+- Use `generate_image` tool
+- Reference archetypes from `<workspace>/archetype/*`
+- Create post image with accompanying caption text
+
+---
+
+## 4. Video Generator
+
+Generate video content if the model supports it.
+
+- **Skip if video generation is unavailable**
+- Create video matching the story and visual style
+- Prepare video post text
+
+---
+
+## 5. Store Assets
+
+Save all content with standardized naming.
+
+### Naming Format
+
+```
+<workspace>/post/YYYYMMDD-<story-slug>/
+```
+
+### Files to Save
+
+- `story.md` - Story development
+- `script.md` - Creative script
+- `image-*.png` - Generated images
+- `video-*.mp4` - Videos (if any)
+- `post.md` - Post text for all platforms

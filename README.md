@@ -1,2 +1,2 @@
-# llm_plugin
+# Project LLM Plugin
 
