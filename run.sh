@@ -22,6 +22,9 @@ ln -s ~/.gemini ./config/
 ln -s ~/.agent  ./config/
 ln -s ~/.claude ./config/
 
+# Global Skills
+ln -s ~/projects/llm_plugin/skills/project-metadata ~/.gemini/antigravity/global_skills/
+
 
 # Global Rules
 ln -s ~/projects/llm_plugin/rules/GEMINI.global.md ./config/.gemini/GEMINI.md
