@@ -1,5 +1,13 @@
 #!/bin/bash
 
+
+#!/bin/bash
+
+mkdir ~/.agent
+ln -s ~/.agent ~/.gemini
+ln -s ~/.agent ~/.claude
+
+
 # Default Antigravity Gemini Link
 mkdir -p ~/.gemini/antigravity
 mkdir -p ~/.gemini/rules
@@ -13,8 +21,6 @@ ln -s ~/.gemini/workflows ~/.gemini/antigravity/global_workflows
 ln -s ~/.gemini ./config/
 ln -s ~/.agent  ./config/
 ln -s ~/.claude ./config/
-
-
 
 
 # Global Rules
