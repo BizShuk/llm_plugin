@@ -1,11 +1,11 @@
 ---
-name: Generate README - Golang
+name: Golang README.md
 description: Analyze workspace and generate comprehensive README documentation with handlers, folder structure, external services, and run instructions
 ---
 
-# Generate README - Golang Workflow
+# Golang README.md
 
-This workflow analyzes the current software project and generates comprehensive documentation in README.md.
+This skill analyzes the current software project and generates comprehensive documentation in README.md.
 
 ## Step 1: Analyze Folder Structure
 
