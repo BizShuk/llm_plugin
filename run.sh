@@ -1,11 +1,8 @@
 #!/bin/bash
 
-
-#!/bin/bash
-
-mkdir ~/.agent
-ln -s ~/.agent ~/.gemini
-ln -s ~/.agent ~/.claude
+mkdir  ~/.agents
+ln -sf ~/.agents ~/.gemini
+ln -s ~/.agents ~/.claude
 
 
 # Default Antigravity Gemini Link
@@ -14,14 +11,13 @@ mkdir -p ~/.gemini/rules
 mkdir -p ~/.gemini/skills
 mkdir -p ~/.gemini/workflows
 
-ln -s ~/.gemini/skills ~/.gemini/antigravity/global_skills
-ln -s ~/.gemini/workflows ~/.gemini/antigravity/global_workflows
-
+ln -sf ~/.gemini/skills ~/.gemini/antigravity/global_skills
+ln -sf ~/.gemini/workflows ~/.gemini/antigravity/global_workflows
 
 # Global Config Alias
-ln -s ~/.gemini ./config/
-ln -s ~/.agent  ./config/
-ln -s ~/.claude ./config/
+ln -sf ~/.gemini ./config/
+ln -sf ~/.agents ./config/
+ln -sf ~/.claude ./config/
 
 # Global Workflows
 ln -s ~/projects/llm_plugin/workflows/screen-writer.md ~/.gemini/workflows/
@@ -35,8 +31,6 @@ ln -s ~/projects/llm_plugin/rules/GEMINI.global.md ./config/.gemini/GEMINI.md
 # Projects Social Platform
 ln -s ~/projects/llm_plugin/rules/go-* ./projects/social_platform/rules/
 
-# Project Skills
-ln -s ~/projects/llm_plugin/skills/character-profile-generator ./projects/Project-Shuk/skills/
 
 
 
