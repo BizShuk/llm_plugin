@@ -21,8 +21,11 @@ Use this skill when:
 
 | Type      | Structure Reference          | Metadata Reference             |
 | --------- | ---------------------------- | ------------------------------ |
+| `default` | N/A (analyzes existing)      | `references/default.readme.md` |
 | `golang`  | `rules/go-structure.md`      | `references/golang.readme.md`  |
 | `profile` | `rules/profile-structure.md` | `references/profile.readme.md` |
+
+**Note:** If no project type is specified, the `default` type is used, which analyzes the existing project structure and generates a comprehensive README.md with folder descriptions.
 
 ---
 
@@ -57,6 +60,27 @@ To initialize a social profile project structure, follow the guidelines in `rule
 ---
 
 ## Metadata Generation
+
+### Default README (Any Project Type)
+
+To generate README documentation for any project, use the workflow defined in `references/default.readme.md`.
+
+This is the **default workflow** when no specific project type is provided. It works for any codebase by:
+
+1. **Identifying Project Type** - Detects language and framework from files
+2. **Traversing Domain Folders** - Analyzes top-level folders (excluding infrastructure)
+3. **Analyzing Configuration** - Extracts info from package files and configs
+4. **Finding Entry Points** - Discovers how to run, build, and test
+5. **Understanding Purpose** - Infers project goals from structure and docs
+6. **Generating README** - Creates comprehensive documentation
+
+The workflow provides detailed descriptions for each domain folder, helping newcomers understand the project structure quickly.
+
+Read the full reference for detailed steps:
+
+```
+references/default.readme.md
+```
 
 ### Golang README
 
@@ -101,5 +125,6 @@ references/profile.readme.md
 
 | File                | Description                            |
 | ------------------- | -------------------------------------- |
+| `default.readme.md` | Workflow for default README generation |
 | `golang.readme.md`  | Workflow for golang README generation  |
 | `profile.readme.md` | Workflow for profile README generation |
