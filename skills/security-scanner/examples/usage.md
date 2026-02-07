@@ -18,8 +18,8 @@ bash skills/security-scanner/scripts/scan_secrets.sh
 ```python
 # This would be flagged as HIGH severity
 GITHUB_TOKEN = "ghp_1234567890abcdefghijklmnopqrstuvwxyz"
-AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"
-STRIPE_KEY = "sk_live_4eC39HqLyjWDarjtT1zdp7dc"
+AWS_ACCESS_KEY = "example"
+STRIPE_KEY = "example"
 ```
 
 ### Example 2: Database Credentials

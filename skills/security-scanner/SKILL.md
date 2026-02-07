@@ -116,25 +116,24 @@ When you invoke this skill, the assistant will:
 
 ```python
 # ❌ Hardcoded AWS credentials
-AWS_ACCESS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
-AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+AWS_ACCESS_KEY_ID = "example"
+AWS_SECRET_ACCESS_KEY = "example"
 
 # ❌ Database password in connection string
 DATABASE_URL = "postgresql://user:MyP@ssw0rd@localhost:5432/db"
 
 # ❌ Private API key
-STRIPE_SECRET_KEY = "sk_live_4eC39HqLyjWDarjtT1zdp7dc"
+STRIPE_SECRET_KEY = "example"
 ```
 
 ### Medium Severity
 
 ```javascript
 // ⚠️ Suspicious base64 string
-const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0...";
+const token = "example";
 
 // ⚠️ Hardcoded password variable
-let password = "admin123";
+let password = "example";
 ```
 
 ### Lower Risk (But Still Flagged)
