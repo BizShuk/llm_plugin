@@ -9,7 +9,7 @@ description: Analyze Go function lengths within a workspace and generate statist
 
 This skill analyzes all Go functions in a workspace and generates:
 
-1. A complete list of functions with their line counts
+1. A complete list of functions with their line counts and maximum call depths
 2. Statistical analysis (p50, p90, p99 percentiles)
 
 ## When to Use
@@ -64,21 +64,20 @@ Generated: YYYY-MM-DD
 
 ## Summary Statistics
 
-| Percentile | Lines | Function | File            |
-| ---------- | ----- | -------- | --------------- |
-| p50        | X     | funcName | path/to/file.go |
-| p90        | X     | funcName | path/to/file.go |
-| p99        | X     | funcName | path/to/file.go |
+| File Path | Function Name | Function Lines | Depth Level | Percentile |
+| --------- | ------------- | -------------- | ----------- | ---------- |
+| path/to/f | funcName      | X              | Y           | p50        |
+| ...       | ...           | ...            | ...         | ...        |
+
+**Total functions:** N
+**Average length:** X lines
 
 ## All Functions (sorted by length, descending)
 
-| Lines | Function | File            |
-| ----- | -------- | --------------- |
-| X     | funcName | path/to/file.go |
-| ...   | ...      | ...             |
-
-Total functions: N
-Average length: X lines
+| File Path | Function Name | Function Lines | Depth Level |
+| --------- | ------------- | -------------- | ----------- |
+| path/to/f | funcName      | X              | Y           |
+| ...       | ...           | ...            | ...         |
 ```
 
 ---
