@@ -1,8 +1,9 @@
 #!/bin/bash
 
 mkdir  ~/.agents
-ln -sf ~/.agents ~/.gemini
-ln -s ~/.agents ~/.claude
+ln -sfh ~/.agents ~/.gemini
+ln -sfh ~/.agents ~/.agent
+ln -sfh ~/.agents ~/.claude
 
 
 # Default Antigravity Gemini Link
@@ -11,28 +12,16 @@ mkdir -p ~/.gemini/rules
 mkdir -p ~/.gemini/skills
 mkdir -p ~/.gemini/workflows
 
-ln -sf ~/.gemini/skills ~/.gemini/antigravity/global_skills
-ln -sf ~/.gemini/workflows ~/.gemini/antigravity/global_workflows
+ln -sfh ~/.gemini/skills ~/.gemini/antigravity/global_skills
+ln -sfh ~/.gemini/workflows ~/.gemini/antigravity/global_workflows
 
 # Global Config Alias
-ln -sf ~/.gemini ./config/
-ln -sf ~/.agents ./config/
-ln -sf ~/.claude ./config/
+ln -sfh ~/.gemini ./config/
+ln -sfh ~/.agents ./config/
+ln -sfh ~/.claude ./config/
 
 # Global Workflows
-ln -s ~/projects/llm_plugin/workflows/screen-writer.md ~/.gemini/workflows/
-
-# Global Skills
-ln -s ~/projects/llm_plugin/skills/project-metadata ~/.gemini/antigravity/global_skills/
+ln -sfh ~/projects/llm_plugin/workflows/screen-writer.md ~/.gemini/workflows/
 
 # Global Rules
-ln -s ~/projects/llm_plugin/rules/GEMINI.global.md ./config/.gemini/GEMINI.md
-
-# Projects Social Platform
-ln -s ~/projects/llm_plugin/rules/go-* ./projects/social_platform/rules/
-
-
-
-
-
-
+ln -sfh ~/projects/llm_plugin/rules/GEMINI.global.md ./config/.gemini/GEMINI.md
