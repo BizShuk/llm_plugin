@@ -19,6 +19,7 @@ ln -sfh ~/.gemini/workflows ~/.gemini/antigravity/global_workflows
 ln -sfh ~/.gemini ./config/
 ln -sfh ~/.agents ./config/
 ln -sfh ~/.claude ./config/
+ln -sfh ~/.claude.json ./config/
 
 # Global Workflows
 ln -sfh ~/projects/llm_plugin/workflows/screen-writer.md ~/.gemini/workflows/
