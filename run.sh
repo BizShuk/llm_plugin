@@ -3,7 +3,7 @@
 mkdir  ~/.agents
 ln -sfh ~/.agents ~/.gemini
 ln -sfh ~/.agents ~/.agent
-ln -sfh ~/.agents ~/.claude
+ln -sh ~/.agents ~/.claude
 
 
 # Default Antigravity Gemini Link
@@ -16,6 +16,7 @@ ln -sfh ~/.gemini/skills ~/.gemini/antigravity/global_skills
 ln -sfh ~/.gemini/workflows ~/.gemini/antigravity/global_workflows
 
 # Global Config Alias
+mkdir -p ./config
 ln -sfh ~/.gemini ./config/
 ln -sfh ~/.agents ./config/
 ln -sfh ~/.claude ./config/
