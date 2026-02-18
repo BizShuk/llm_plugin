@@ -4,7 +4,7 @@
 
 ```text
 .
-├── config/                     # Configuration files for the agent/environment
+├── config/                     # Configuration files for the global agent/environment
 ├── mcp/                        # Model Context Protocol server configurations
 │   ├── db.toml
 │   ├── gemini_cli.jsonc
@@ -13,15 +13,7 @@
 ├── plugins/                    # Internal plugins for the agent
 │   ├── ding/                   # Plugins to play sound
 │   └── plan/                   # Planning capability plugin
-├── projects/                   # Workspace for all independent projects (parallel items)
-│   ├── bigtwo/                 # Multiplayer Big Two poker game
-│   ├── data/                   # Centralized data storage
-│   ├── env_setup/              # Core system logic and environment setup
-│   ├── fun/                    # Lifestyle project (eat, drink, fun, travel)
-│   ├── llm_plugin/             # Current AI research and MCP plugin development
-│   ├── playground/             # Testing space for new libraries
-│   ├── security/               # Private network security scanning tools
-│   └── stock/                  # Stock market strategy and analysis
+├── projects/                   # (skipped for sub folders)LLM configurations for all independent projects (parallel items)
 ├── rules/                      # Agent behavior rules and conventions
 │   ├── GEMINI.global.md
 │   ├── GEMINI.profile.md
@@ -76,4 +68,4 @@ _Prices are estimated based on standard API rates as of Feb 2026. Please check o
 
 ## AI News Reports
 
-Use [README.template.md](README.template.md) to generate AI news reports. File name pattern should be YYYYMMDD.md and put it under `specs` folder
+Weekly AI news is generated under @specs/

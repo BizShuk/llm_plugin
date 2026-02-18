@@ -23,7 +23,11 @@ ex1: 中正紀念堂 (Chiang Kai-shek Memorial Hall)
 
 ex2: Catedral de Santa Eulalia de Barcelona(Barcelona Cathedral)
 
-### Structure
+### Restrction
+
+- When generating markdown/md file context, don't use **bold** or **bold**. `backtick` better
+
+## Structure
 
 | Principle        | When to Use                    |
 | ---------------- | ------------------------------ |
