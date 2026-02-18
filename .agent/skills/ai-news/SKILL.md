@@ -1,16 +1,32 @@
-# Tasks
+---
+name: ai-news
+description: Summarize the latest AI news and create a report
+---
 
-context: [[./README.md]] and ./@README\*.md in the same folder
+# AI News Reporter
 
-## ai-news
+This skill summarizes the latest AI news and creates a report. The file name pattern should be `YYYYMMDD.md` and it should be placed under the `specs` folder.
 
-Parameters:
+parameters:
 
-- None
+time period: (default: from -7 days)
 
-Summarize the latest AI news and create a report (File name pattern should be `YYYYMMDD.md` and put it under `specs` folder)
+## Instructions
 
-### ai-news template
+1. **Gather Intelligence**:
+   - **General AI News**: Search for the latest AI news.
+   - **OpenClaw Release Log**: Check [OpenClaw Repo](https://github.com/openclaw/openclaw/releases).
+   - **AI Trading Competition**: Check for updates.
+   - **AI Model Competition**: Check for model benchmarks or releases.
+   - **MoltBook Hot Topics**: Check [MoltBook](https://www.moltbook.com).
+
+2. **Create Report**:
+   - Generate a file named `specs/{YYYYMMDD}.md` (e.g., `specs/20240520.md`).
+   - Use the template below.
+   - Fill in the `[Summary of ...]` placeholders with the gathered information.
+   - Ensure the "AI Model List and Price Package" table is included as is, or updated if you have newer information on these specific models.
+
+## Template
 
 ```markdown
 # AI News Report - [YYYY-MM-DD]
