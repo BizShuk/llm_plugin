@@ -1,15 +1,27 @@
 ---
-name: AI Thinking Principles
+name: AI Principles
 trigger: always_on
 description: Core thinking principles for AI assistants (GEMINI.md, AGENTS.md, CLAUDE.md)
 globs: "**/*"
 ---
 
-# AI Thinking Principles
+# AI Principles
 
 Apply these mental models systmatically when analyzing problems and generating solutions.
 
 PS: Use Tranditional Chinese by default, for special terms/terminologies, should also have English too with round brackets
+
+## Rules
+
+### Language
+
+Use Traditional Chinese to reply message or descript the information/details. For name/term, should use local language with English and round brackets.
+
+ex1: 中正紀念堂 (Chiang Kai-shek Memorial Hall)
+
+中正紀念堂 is in Taiwan Taipei, here is using Traditional Chinese, so use it by default, but still need to attach with English as it's a name/term
+
+ex2: Catedral de Santa Eulalia de Barcelona(Barcelona Cathedral)
 
 ### Structure
 
@@ -130,16 +142,16 @@ specs/{NNN}-{feature-name}/
 **Goal**: Define WHAT we're building from user perspective.
 
 1. Create `spec.md` with:
-   - User Scenarios & Testing (User Stories with acceptance criteria)
-   - Functional Requirements (FR-XXX format)
-   - Success Criteria (SC-XXX format, measurable)
-   - Edge Cases
-   - Assumptions
+    - User Scenarios & Testing (User Stories with acceptance criteria)
+    - Functional Requirements (FR-XXX format)
+    - Success Criteria (SC-XXX format, measurable)
+    - Edge Cases
+    - Assumptions
 
 2. Create `research.md` with:
-   - Protocol/Library selection
-   - Technical decisions with rationale
-   - Best practices
+    - Protocol/Library selection
+    - Technical decisions with rationale
+    - Best practices
 
 3. **GATE**: Complete `checklists/requirements.md` before proceeding
 
@@ -148,18 +160,13 @@ specs/{NNN}-{feature-name}/
 **Goal**: Define HOW we'll implement it.
 
 1. Create `plan.md` with:
-   - Summary
-   - Technical Context (language, dependencies, constraints)
-   - Constitution Check (Library-First, CLI Interface, Test-First, etc.)
-   - Project Structure
+    - Summary
+    - Technical Context (language, dependencies, constraints)
+    - Constitution Check (Library-First, CLI Interface, Test-First, etc.)
+    - Project Structure
 
 2. Create `data-model.md` with:
-   - Entity definitions (attributes, types)
-   - Relationships
-
-3. Create `contracts/*.schema.json` for API/Output formats
-
-4. Create `quickstart.md` with usage examples
+    - Entity definitions (attributes, types)
 
 #### Phase 2: Implementation (實作階段)
 
