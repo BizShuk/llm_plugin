@@ -12,7 +12,7 @@ This document provides a comprehensive overview of the folder structure centered
 ├── bin/                    # Global CLI tools (Symlink to projects/env_setup/bin)
 └── projects/               # Parallel project workspace
     ├── env_setup/          # Environment & script management
-    ├── llm_plugin/         # Current workspace (this repo)
+    ├── llm_plugin/         # Any AI LLM model related
     ├── fun/                # Lifestyle & travel project
     ├── security/           # Network security & scanning
     ├── stock/              # Stock analysis & data
@@ -93,12 +93,14 @@ Based on `bin/project_setup`, every project follows a consistent skeleton:
 
 ```text
 project_name/
-├── .agent/                 # Symlink to .gemini/.agents (agent config)
-├── .gemini/                # (Optional) Local agent overrides
+├── .agent/                 # Main agent configuration (rules, skills, settings)
+├── .gemini/                # Symlink to .agent
+├── .gitignore              # Git ignore file (symlinked to .geminiignore)
+├── GEMINI.md               # Project-specific AI context
 ├── README.md               # Project overview
+├── README.task.md          # Task context and prompt templates
 ├── README.todo             # Task tracking and open items
-├── README.prompt.md        # Specialized prompts for the project context
-└── specs/                  # Phase-based specifications and plans
+└── specs/                  # Phase-based specifications and plans (Convention)
 ```
 
 ### `bin/`
