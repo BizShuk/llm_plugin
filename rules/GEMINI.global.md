@@ -25,4 +25,6 @@ ex2: Catedral de Santa Eulalia de Barcelona(Barcelona Cathedral)
 
 ### Restrction
 
-- When generating markdown/md file content, don't use **bold**. `backtick` better to highligh
+#### Markdown file
+
+Don't use **bold**, but `backtick` better to highlight
