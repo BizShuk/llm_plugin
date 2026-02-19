@@ -1,33 +1,18 @@
 ---
-name: project-metadata
-description: Project metadata update
+name: Project Structure
+trigger: always_on
+description: This is standard project skeleton rules for all repositories
+globs: "**/*"
 ---
 
-# Project Metadata
+# Project Structure
 
-based on the project content to update project metadata
+Every project MUST follow this consistent skeleton to ensure uniformity across the workspace.
 
-metadata include
-
-- sections in README.md
-
-## README.md
-
-### folder structure
-
-analyze the project (max 3 level folders) and generate a tree structure and descriptions
-folder described in @structure.project.md should be included
-
-### project skill list
-
-check out the @.agent/skills/ to find out skills and list in this section
-
-## Reference
-
-### project folder structure (專案目錄結構範例)
+## Standard Single Project Structure
 
 ```text
-<project_name>/
+project_name/
 ├── .agent/                 # Main agent configuration
 │   ├── skills/             # Project-specific skills
 │   ├── rules/              # Project-specific rules
@@ -43,3 +28,6 @@ check out the @.agent/skills/ to find out skills and list in this section
 ├── specs/                  # Phase-based specifications and plans
 └── [Domain Folders]/       # Physical project structure (e.g., cmd/, svc/, model/, etc.)
 ```
+
+> [!IMPORTANT]
+> **Project Domain Structure**: The `README.md` MUST include the current project's folder structure. If the domain folders or the structure in `README.md` is missing/outdated, you MUST call the `project_metadata` skill to synchronize and document the project's physical layout.
