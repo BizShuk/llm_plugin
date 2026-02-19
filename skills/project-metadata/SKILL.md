@@ -16,30 +16,8 @@ metadata include
 ### folder structure
 
 analyze the project (max 3 level folders) and generate a tree structure and descriptions
-folder described in @structure.project.md should be included
+ref: @structure.project.md
 
 ### project skill list
 
 check out the @.agent/skills/ to find out skills and list in this section
-
-## Reference
-
-### project folder structure (專案目錄結構範例)
-
-```text
-<project_name>/
-├── .agent/                 # Main agent configuration
-│   ├── skills/             # Project-specific skills
-│   ├── rules/              # Project-specific rules
-│   ├── workflows/          # Project-specific workflows
-│   └── settings.json       # Project-specific agent settings
-├── .agents/                # Antigravity project workflow (Symlink to .agent)
-│   └── workflows/          # Project-specific individual workflows
-├── .gemini/                # Symlink to .agent
-├── .gitignore              # Git ignore file (symlinked to .geminiignore)
-├── GEMINI.md               # Project-specific AI context
-├── README.md               # Project overview (Must include domain folder structure)
-├── README.todo             # Task tracking and open items
-├── specs/                  # Phase-based specifications and plans
-└── [Domain Folders]/       # Physical project structure (e.g., cmd/, svc/, model/, etc.)
-```
