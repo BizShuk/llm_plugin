@@ -15,19 +15,22 @@
 │   └── plan/                   # Planning capability plugin
 ├── projects/                   # (skipped for sub folders)LLM configurations for all independent projects (parallel items)
 ├── rules/                      # Agent behavior rules and conventions
-│   ├── GEMINI.global.md
+│   ├── structure.global.md    # Global folder structure rule
+│   ├── GEMINI.global.md        # Core AI principles
 │   ├── GEMINI.profile.md
+│   ├── GEMINI.tmp.md
 │   ├── consistency.md
 │   ├── go-convention.md
 │   ├── go-structure.md
 │   ├── go-testing.md
-│   ├── go-tools.md
-│   └── profile-structure.md
+│   └── go-tools.md
 ├── skills/                     # Specialized capability modules for the agent
+│   ├── ai-news/
 │   ├── celebrity-quotes/
 │   ├── character-profile-generator/
 │   ├── chat-summary/
 │   ├── clean-unused-code/
+│   ├── cron-job-template/
 │   ├── go-function-analysis/
 │   ├── private-network-scan/
 │   ├── project-metadata/
@@ -41,8 +44,6 @@
 ├── GEMINI.md                   # Project-specific AI context
 ├── README.md                   # Project overview (this file)
 ├── README.structure.md         # Detailed folder structure context
-├── README.task.md              # Task context and prompt templates
-├── README.template.md          # Template for AI news reports
 ├── README.todo                 # Task tracking and open items
 ├── run.sh                      # Execution script
 └── settings.json               # VS Code or project settings

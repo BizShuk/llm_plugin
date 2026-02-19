@@ -9,11 +9,7 @@ globs: "**/*"
 
 Apply these mental models systmatically when analyzing problems and generating solutions.
 
-PS: Use Tranditional Chinese by default, for special terms/terminologies, should also have English too with round brackets
-
-## Rules
-
-### Language
+## Language
 
 Use Traditional Chinese to reply message or descript the information/details. For name/term, should use local language with English and round brackets.
 
@@ -23,8 +19,13 @@ ex1: 中正紀念堂 (Chiang Kai-shek Memorial Hall)
 
 ex2: Catedral de Santa Eulalia de Barcelona(Barcelona Cathedral)
 
-### Restrction
+## folder structure
 
-#### Markdown file
+- @~/.agent/structure.global.md
+- @~/.agent/structure.project.md
+
+## Restriction
+
+### Generating Markdown file
 
 Don't use **bold**, but `backtick` better to highlight
