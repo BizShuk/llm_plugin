@@ -20,4 +20,4 @@ ref: @structure.project.md
 
 ### project skill list
 
-check out the @.agent/skills/ to find out skills and list in this section
+check out the `skills/` and `.agent/skills/` folders within the project to find out skills and list in this section. Do not include global skills.

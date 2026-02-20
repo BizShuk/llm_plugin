@@ -1,5 +1,4 @@
 ---
-name: AI Principles
 trigger: always_on
 description: Core thinking principles for AI assistants (GEMINI.md, AGENTS.md, CLAUDE.md)
 globs: "**/*"
@@ -29,3 +28,8 @@ ex2: Catedral de Santa Eulalia de Barcelona(Barcelona Cathedral)
 ### Generating Markdown file
 
 Don't use **bold**, but `backtick` better to highlight
+
+### if hit error while execution
+
+Check the erorr and try to fix it. max retry times is 10.
+if can't be resolved, the stop and error out explicitely.

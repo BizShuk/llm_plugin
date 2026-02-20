@@ -31,3 +31,15 @@ project_name/
 
 > [!IMPORTANT]
 > **Project Domain Structure**: The `README.md` MUST include the current project's folder structure. If the domain folders or the structure in `README.md` is missing/outdated, you MUST call the `project_metadata` skill to synchronize and document the project's physical layout.
+
+## 技能資料夾結構 (Skill Folder Structure)
+
+每個技能必須位於 `.agent/skills/` 下的獨立資料夾中，並將該技能相關的所有規則 (rules) 和工作流 (workflows) 整合在同一資料夾內。
+
+```text
+.agent/skills/[skill-name]/
+├── SKILL.md                # 技能定義與說明 (Skill definition and instructions)
+├── rules/                  # 該技能專用的規則 (Skill-specific rules)
+├── references/             # 輸出範本與參考文件 (Output templates and references)
+└── scripts/                # 輔助腳本或工具 (Supporting scripts or utilities)
+```
