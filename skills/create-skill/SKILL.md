@@ -10,6 +10,8 @@ version: "1.0.0"
 
 # Create Skill
 
+create/update/delete skill under .agents/skills/. also manage a agent skill list in <workspace>/README.md `Agent Skills` section
+
 ## Create Skill From Repository
 
 Create <skill_name> skill from a given repository URL. It will clone the repo, perform a full project analysis, and create a skill in the workspace.
