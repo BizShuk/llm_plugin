@@ -8,6 +8,8 @@ version: <1.0.0>
 
 # <Skill Name>
 
+Read <project>/README.md (usually at ../../../README.md relative to output folder <workspace>/.agents/skills/<skill>/)
+
 ## <Functionality 1 Name>
 
 <functionality 1 description>

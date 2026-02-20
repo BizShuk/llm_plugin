@@ -1,32 +1,41 @@
 ---
-name: ai-news
+title: AI News Report
 description: Summarize the latest AI news and create a report
+tags: ["news", "ai", "reporting", "intelligence"]
+category: information
+version: 1.0.0
 ---
 
 # AI News Reporter
 
-This skill summarizes the latest AI news and creates a report. The file name pattern should be `YYYYMMDD.md` and it should be placed under the `specs` folder.
+## Summarize and Report AI News
 
-parameters:
+Gathers intelligence from various AI-related sources and generates a structured report in the `specs` folder. Sources to check include:
 
-time period: (default: from -7 days)
+- **General AI News**: Latest headlines and breakthroughs.
+- **OpenClaw Release Log**: Updates from [OpenClaw Repo](https://github.com/openclaw/openclaw/releases).
+- **AI Trading Competition**: Status and updates.
+- **AI Model Competition**: Model benchmarks or releases.
+- **MoltBook Hot Topics**: Trending topics on [MoltBook](https://www.moltbook.com).
 
-## Instructions
+The reporter should also update the "AI Model List and Price Package" table if newer pricing or model details are found.
 
-1. **Gather Intelligence**:
-   - **General AI News**: Search for the latest AI news.
-   - **OpenClaw Release Log**: Check [OpenClaw Repo](https://github.com/openclaw/openclaw/releases).
-   - **AI Trading Competition**: Check for updates.
-   - **AI Model Competition**: Check for model benchmarks or releases.
-   - **MoltBook Hot Topics**: Check [MoltBook](https://www.moltbook.com).
+### Parameters
 
-2. **Create Report**:
-   - Generate a file named `specs/{YYYYMMDD}.md` (e.g., `specs/20240520.md`).
-   - Use the template below.
-   - Fill in the `[Summary of ...]` placeholders with the gathered information.
-   - Ensure the "AI Model List and Price Package" table is included as is, or updated if you have newer information on these specific models.
+- `time period`: The time range for gathering news (Default: `from -7 days`)
 
-## Template
+### Output Folder Structure
+
+```text
+specs/
+└── news-{YYYYMMDD}.md
+```
+
+- **File Name Pattern**: Generate a file named `news-{YYYYMMDD}.md` (e.g., `news-20240520.md`) under the `specs` folder.
+
+### Output File Content
+
+The output file should follow this template and include the gathered summaries and updated model information:
 
 ```markdown
 # AI News Report - [YYYY-MM-DD]
@@ -46,7 +55,6 @@ time period: (default: from -7 days)
 | **Gemini 3 Flash**         | $0.50                   | $1.50                    | 5M             | Jan 2026         | Ultra-fast, high capacity          |
 | **Gemini 3 Pro**           | $2.50                   | $7.50                    | 5M             | Jan 2026         | Next-gen multimodal reasoning      |
 | **Kimi 2.5**               | $1.00                   | $3.00                    | 10M            | Feb 2026         | Extremely long context specialist  |
-|                            |                         |                          |                |                  |                                    |
 
 ## Latest News
 
