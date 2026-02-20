@@ -14,9 +14,20 @@ Read <project>/README.md (usually at ../../../README.md relative to output folde
 
 <functionality 1 description>
 
-### Parameters
+### Usage
+
+Parameters
 
 - `param_name`: Description of the parameter (Default: `default_value`)
+
+How to use it? ([context_only], use prompt if pure skill, use command line if it's script call)
+
+```text
+[sample below]
+use create-skill with rpeo <repo_link>
+use create-skill with references <references>
+use create-skill to align with <exsit_skill_name>
+```
 
 ### Output Folder Structure
 

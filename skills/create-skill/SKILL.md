@@ -16,9 +16,19 @@ create/update/delete skill under .agents/skills/. also manage a agent skill list
 
 Create <skill_name> skill from a given repository URL. It will clone the repo, perform a full project analysis, and create a skill in the workspace.
 
-### Parameters
+### Usage
+
+Parameters
 
 - `repo_link`: The URL of the repository to clone and analyze. (Default: none)
+
+How to use this command
+
+```bash
+use create-skill with rpeo <repo_link>
+use create-skill with references <references>
+use create-skill to align with <exsit_skill_name>
+```
 
 ### Output Folder Structure
 
