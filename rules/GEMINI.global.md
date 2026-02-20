@@ -90,10 +90,10 @@ The `.local/` folder stores user-specific data, configurations, and environment 
 
 #### Project Skill Folder Structure
 
-Each skill must be located in a separate directory under `~/projects/<project_name>/.agent/skills/`
+Each skill must be located in a separate directory under `~/projects/<project_name>/.agents/skills/`
 
 ```text
-~/projects/<project_name>/.agent/skills/[skill-name]/
+~/projects/<project_name>/.agents/skills/[skill-name]/
 ├── SKILL.md                # 技能定義與說明 (Skill definition and instructions)
 └── references/             # 輸出範本與參考文件 (Output templates and references)
 ```

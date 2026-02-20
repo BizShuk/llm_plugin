@@ -21,7 +21,7 @@ Create <skill_name> skill from a given repository URL. It will clone the repo, p
 ### Output Folder Structure
 
 ```text
-path/to/workspace/skills/<skill_name>/
+<path/to/workspace>/.agents/skills/<skill_name>/
 └── SKILL.md
 ```
 
@@ -42,7 +42,7 @@ Create <skill_name> skill from provided reference documents or URLs instead of a
 ### Output Folder Structure
 
 ```text
-path/to/workspace/skills/<skill_name>/
+<path/to/workspace>/.agents/skills/<skill_name>/
 └── SKILL.md
 ```
 
