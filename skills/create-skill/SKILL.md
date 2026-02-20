@@ -5,8 +5,6 @@ icon: 🚀
 category: skill-management
 tags: ["skill-creation", "repository"]
 author: Shuk
-user-invocable: true
-status: draft
 version: "1.0.0"
 ---
 
