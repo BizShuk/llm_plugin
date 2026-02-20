@@ -18,8 +18,9 @@ project_name/
 │   ├── rules/              # Project-specific rules
 │   ├── workflows/          # Project-specific workflows
 │   └── settings.json       # Project-specific agent settings
-├── .agents/                # Antigravity project workflow (Symlink to .agent)
-│   └── workflows/          # Project-specific individual workflows
+├── .agents/                # Antigravity 專案工作流 (Antigravity project workflow) (Symlink to .agent)
+│   ├── rules/              # 專案特定個別規則 (Project-specific individual rules)
+│   └── workflows/          # 專案特定個別工作流 (Project-specific individual workflows)
 ├── .gemini/                # Symlink to .agent
 ├── .gitignore              # Git ignore file (symlinked to .geminiignore)
 ├── GEMINI.md               # Project-specific AI context
