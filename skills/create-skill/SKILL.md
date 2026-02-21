@@ -53,6 +53,8 @@ Create <skill_name> skill from provided reference documents or URLs instead of a
 
 ### Output Folder Structure
 
+For Create New SKill only. if just align structure, then use existing one
+
 ```text
 <path/to/workspace>/.agents/skills/<skill_name>/
 └── SKILL.md
