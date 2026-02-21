@@ -1,10 +1,10 @@
 ---
 trigger: always_on
-description: Overall Rules
+description: Overall AI Rules
 globs: "**/*"
 ---
 
-# AI Principles
+# Overall AI Rules
 
 Apply these mental models systmatically when analyzing problems and generating solutions.
 
