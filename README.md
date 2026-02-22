@@ -84,6 +84,25 @@
 
 _Prices are estimated based on standard API rates as of Feb 2026. Please check official provider pages for the most up-to-date pricing._
 
+## AI Subscription / Package Plans
+
+| Provider / Plan Name       | Monthly Price | Key Included Models / Services                   | Limitation / Quota               | Target User / Best Use Case                      |
+| :------------------------- | :------------ | :----------------------------------------------- | :------------------------------- | :----------------------------------------------- |
+| **OpenAI ChatGPT Plus**    | $20.00        | GPT-4o, ChatGPT-5.2 Codex                        | ~80 msgs / 3 hrs (GPT-4o)        | Standard developers & general power users        |
+| **OpenAI ChatGPT Pro**     | $200.00       | GPT-4o, ChatGPT-5.2 Codex (Compute Heavy)        | ~500 msgs / 3 hrs (GPT-4o)       | High-volume intensive reasoning & coding         |
+| **Anthropic Claude Pro**   | $20.00        | Claude Code Sonnet 4.6, Opus 4.6                 | ~45 msgs / 5 hrs (Sonnet/Opus)   | Heavy multi-file coding & reasoning              |
+| **Google One AI Premium**  | $19.99        | Gemini 3.1 Pro, 3.1 Flash (includes 2TB Storage) | ~50 msgs / day (Gemini Pro)      | Ecosystem integration & massive context use      |
+| **Minimax Coding Plus**    | $20.00        | MiniMax M2.5 / M2                                | 300 prompts / 5 hrs              | Developers needing native MiniMax capabilities   |
+| **Minimax Coding Starter** | $10.00        | MiniMax M2.5 / M2                                | 100 prompts / 5 hrs              | Light developer usage                            |
+| **X Premium+ (Grok)**      | $16.00        | Grok 3, Grok 4 (Full access)                     | Generous / Priority Access       | Social media integration & real-time X data      |
+| **Microsoft Copilot Pro**  | $20.00        | GPT-4o, Phi-4 within M365                        | Priority access during peak      | Office workers & daily copilot tasks             |
+| **Kimi Plus**              | ~$13.00 (¥99) | Kimi 2.5, Kimi 2 (Extended limits)               | Peak hour priority, high context | Long-document analysts & heavy researchers       |
+| **Qwen / Tongyi VIP**      | ~$7.00 (¥50)  | Qwen 2.5/3 Max (Priority queues)                 | ~600 queries / 3 hrs             | Regional users needing top Chinese logic tools   |
+| **DeepSeek Web**           | Free/API      | DeepSeek V3.1, R1 (Web usually free)             | ~50 msgs / 3 hrs (V3)            | Cost-effective reasoning, open-weights ecosystem |
+| **Zhipu GLM Plus**         | ~$5.50 (¥39)  | GLM 5, 4.7                                       | Varies by specific tier          | Regional localized tasks                         |
+
+_Subscription prices are based on typical monthly rates as of Feb 2026. Always verify with official pages._
+
 ## AI News Reports
 
 Weekly AI news is generated under @specs/

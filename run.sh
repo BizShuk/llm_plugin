@@ -22,6 +22,6 @@ ln -sfh ~/.claude.json ./config/
 
 # Global Rules
 cp -f ~/projects/llm_plugin/rules/GEMINI.global.md ./config/.gemini/GEMINI.md
-cp -f ~/projects/llm_plugin/rules/GEMINI.global.md ~/.openclaw/workspace/memory/folder_structure.md
+cp -f ~/projects/llm_plugin/rules/GEMINI.global.md ~/.openclaw/workspace-yuna/memory/folder_structure.md
 
 # skill using npx skills add to operate
