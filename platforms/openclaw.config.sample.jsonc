@@ -1,0 +1,152 @@
+{
+  // ==========================================
+  // 1. 基底預設值 (Agent Defaults)
+  // ==========================================
+  "agents": {
+    "defaults": {
+      "workspace": "~/.openclaw/workspace", // Agent 操作的檔案空間
+      "userTimezone": "Asia/Taipei",
+      "model": {
+        "primary": "anthropic/claude-3-5-sonnet", // 主模型
+        "fallbacks": ["openai/gpt-4o", "google/gemini-1.5-pro"] // 備援路徑
+      },
+      "thinkingDefault": "low", // 思考深度模式 (low/medium/high)
+      "elevatedDefault": "on", // 是否預設開啟提權模式 (執行高權限工具)
+      "humanDelay": { "mode": "natural" }, // 模擬人類回覆延遲，避免被平台封鎖
+
+      // 定期心跳任務 (心跳包)
+      "heartbeat": {
+        "every": "30m",
+        "model": "anthropic/claude-3-5-sonnet",
+        "prompt": "檢查任務清單並回報進度",
+        "target": "last" // 回傳到最後一次說話的頻道
+      },
+
+      // 記憶體與知識庫設定 (需要向量模型)
+      "memorySearch": {
+        "provider": "google",
+        "model": "text-embedding-004",
+        "extraPaths": ["~/my-notes", "../../shared-docs"]
+      },
+
+      // 沙盒設定 (增強安全性)
+      "sandbox": {
+        "mode": "non-main", // 除了 main agent 外都在沙盒執行
+        "docker": {
+          "image": "openclaw-sandbox:latest",
+          "network": "none" // 禁用網路
+        }
+      }
+    }
+  },
+
+  // ==========================================
+  // 2. 頻道整合 (Channels)
+  // ==========================================
+  "channels": {
+    // WhatsApp (Baileys 驅動)
+    "whatsapp": {
+      "dmPolicy": "pairing", // 陌生人需要配對碼認證
+      "allowFrom": ["+886912345678"], // 白名單模式
+      "groups": {
+        "*": { "requireMention": true } // 群組中必須被 @ 才會回應
+      }
+    },
+
+    // Telegram
+    "telegram": {
+      "enabled": true,
+      "botToken": "YOUR_TG_TOKEN",
+      "allowFrom": ["tg:123456789"]
+    },
+
+    // Discord (支援複雜的伺服器與頻道權限)
+    "discord": {
+      "enabled": true,
+      "token": "YOUR_DISCORD_TOKEN",
+      "guilds": {
+        "1234567890": {
+          "slug": "my-server",
+          "channels": {
+            "general": { "allow": true },
+            "admin-only": { "requireMention": true, "skills": ["exec"] }
+          }
+        }
+      }
+    },
+
+    // Slack
+    "slack": {
+      "enabled": true,
+      "botToken": "xoxb-...",
+      "appToken": "xapp-..." // Socket Mode 使用
+    }
+  },
+
+  // ==========================================
+  // 3. 工具與提權策略 (Tools & Elevation)
+  // ==========================================
+  "tools": {
+    "allow": ["exec", "read", "write", "browser"], // 允許的工具列表
+    "deny": ["canvas"], // 明確拒絕的工具
+    "elevated": {
+      "enabled": true,
+      "allowFrom": {
+        "whatsapp": ["+886912345678"], // 只有特定號碼才能執行高風險指令
+        "telegram": ["tg:123456789"]
+      }
+    }
+  },
+
+  // ==========================================
+  // 4. 自動化 hooks (Webhooks)
+  // ==========================================
+  "hooks": {
+    "enabled": true,
+    "path": "/hooks", // Webhook 的 API 路徑
+    "token": "my-shared-secret", // 外部呼叫時需攜帶的認證 Token
+    "mappings": [
+      {
+        "id": "github-alert",
+        "match": { "path": "github" },
+        "action": "agent",
+        "messageTemplate": "從 GitHub 收到通知：{{body.action}}"
+      }
+    ]
+  },
+
+  // ==========================================
+  // 5. 閘道器與基礎設施 (Gateway)
+  // ==========================================
+  "gateway": {
+    "port": 18789,
+    "bind": "loopback", // 僅本地監聽，外部用 Tailscale 或反向代理
+    "auth": {
+      "mode": "token",
+      "token": "YOUR_SECRET_GATEWAY_TOKEN"
+    },
+    "trustedProxies": ["127.0.0.1"],
+    // 控制面板 UI 設定
+    "controlUi": {
+      "enabled": true,
+      "basePath": "/openclaw"
+    }
+  },
+
+  // ==========================================
+  // 6. 其他全域設定
+  // ==========================================
+  "identity": {
+    "name": "Claw-AI",
+    "theme": "專業且冷靜的助理",
+    "emoji": "🦞"
+  },
+  "logging": {
+    "level": "info",
+    "consoleStyle": "pretty"
+  },
+  "cron": {
+    "enabled": true,
+    "store": "~/.openclaw/cron/cron.json"
+  }
+}
