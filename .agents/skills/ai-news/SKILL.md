@@ -27,11 +27,12 @@ The reporter should also update the "AI Model List and Price Package" table if n
 ### Output Folder Structure
 
 ```text
-specs/
-└── news-{YYYYMMDD}.md
+~/projects/llm_plugin/
+    └── specs/
+        └── news-{YYYYMMDD}.md
 ```
 
-- **File Name Pattern**: Generate a file named `news-{YYYYMMDD}.md` (e.g., `news-20240520.md`) under the `specs` folder.
+- **File Name Pattern**: Generate a file named `news-{YYYYMMDD}.md`
 
 ### Output File Content
 
