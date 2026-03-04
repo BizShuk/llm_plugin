@@ -48,3 +48,24 @@
 ├── run.sh                      # Execution script
 └── settings.json               # VS Code or project settings
 ```
+
+## Service List
+
+AI related
+
+- ChatGPT: 內容靈感、開場鉤子、銷售話術
+- Claude: 長篇寫作＋深度研究
+- Perplexity: 快速 AI搜尋研究
+- Poppy AI: 把混亂想法整理成有結構的內容
+- Jasper: 行銷文案＋ Email 自動化序列
+- ElevenLabs: 像真人一樣自然的Al配音
+- Descript: 用編輯文字的方式剪輯影片
+- CapCut: 短影音剪輯
+- Canva: 封面圖、輪播圖、名單 磁鐵製作
+- Midjourney: 吸睛視覺設計
+- Lovable: 建立簡單應用程式或工具
+- GoHighLevel: 銷售漏斗+Email 自動化
+- ManyChat: 私訊自動化（開發潛在客戶）
+- Notion AI: 整理内容與系統架構
+- Zapier: 串接你的各種工具
+- Stripe: 收款工具

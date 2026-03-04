@@ -50,6 +50,8 @@ User Home Directory Tree Overview
     └── ...                 # Other micro-service style projects (Parallel microservices)
 ```
 
+if not explictly mentioned, should work in the workspace only
+
 #### System Directories
 
 ##### ~/.local/
