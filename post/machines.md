@@ -59,3 +59,24 @@ python -m mlx_lm.generate --model mlx-community/Qwen3-30B-A3B-Instruct-4bit --pr
 
 - `多工處理 (Multitasking)`：可以在執行 `14B` 模型時，依然流暢進行日常開發工作。
 - `極限測試 (Stress Test)`：理論上可加載 `Llama 3 70B (2-bit / 3-bit)`，但這會導致速度降至每秒僅數個單詞，缺乏實用價值。
+
+---
+
+## 256GB 記憶體與 64 核心 (256GB RAM & 64 Cores VM)
+
+`可用空間 (Available Space)`：約 `230-240 GB`
+此高階規格的 `虛擬機 (Virtual Machine, VM)` 能夠無極限地流暢運行目前最強大的開源模型，是 `編碼 (Coding)` 與 `通用任務 (General Purpose)` 的核心選擇，且擁有極高的推論速度。
+
+### 首選推薦 (Top Recommendations)
+
+| `模型系列 (Model Series)` | `參數與權化 (Params & Quant)` | `特點分析 (Key Features)`                                                   |
+| :------------------------ | :---------------------------- | :-------------------------------------------------------------------------- |
+| `Qwen 2.5 / 3 Coder`      | `72B (4-bit / 8-bit)`         | `處理極複雜的程式碼開發與架構設計，反應迅速且支援長文本，編碼首選。`        |
+| `Llama 3.1 / 3.3`         | `70B (8-bit / FP16)`          | `能輕鬆運行 70B 近乎全精度，提供穩定的通用推理，速度極其流暢。`             |
+| `DeepSeek-V3 / R1`        | `671B (MoE, 4-bit)`           | `頂尖的程式邏輯與深度思考能力，MoE 架構與多核心 CPU 配合使得回應速度極佳。` |
+| `Mistral Large`           | `123B (4-bit / 8-bit)`        | `卓越的多語言與通用推理能力，且反應極限迅速。`                              |
+
+### 效能分析 (Performance Analysis)
+
+- `推論速度 (Inference Speed)`：受惠於 `64 核心 (64 Cores)` 的強大算力與頻寬，即使是 `70B` 級別的大型模型，也能提供接近即時回覆的生成速度，完全不會有等待的延遲感。
+- `多工與並發 (Concurrency)`：龐大的記憶體讓您可以同時載入多個特定領域的強大模型，完美支援 `多個 AI 代理 (Multi-Agent)` 協作，能夠在後台並行運作而無效能瓶頸。
