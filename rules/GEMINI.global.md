@@ -102,6 +102,10 @@ Each skill must be located in a separate directory under `~/projects/<project_na
 
 ## Restriction
 
+### Context Only
+
+if see `# [context_only]` then ignore output from this to end of the line
+
 ### Generating Markdown file
 
 Don't use **bold**, but `backtick` better to highlight
