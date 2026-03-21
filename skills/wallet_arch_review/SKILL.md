@@ -1,5 +1,5 @@
 ---
-title: Wallet Architecture Review
+name: Wallet Architecture Review
 description: 運用 codebase MCP 審查 Merge Request，包含邏輯重複、潛在問題、測試覆蓋率與命名一致性檢查
 tags: [code-review, architecture, testing]
 category: code-quality

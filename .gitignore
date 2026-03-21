@@ -13,3 +13,7 @@ dist/
 *.swp
 .vscode/
 .idea/
+tmp/.agent
+tmp/.agents
+tmp/.claude
+tmp/.gemini
