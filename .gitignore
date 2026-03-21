@@ -17,3 +17,7 @@ tmp/.agent
 tmp/.agents
 tmp/.claude
 tmp/.gemini
+log/app.call.log
+log/app.log
+log/app/app.access.log
+log/rpc/app.call.log
